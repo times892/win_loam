@@ -17,4 +17,5 @@
 .\win_loam.exe `.\configs\win_loam.yaml `.\test_data
 
 ## 效果演示
-3. 请看win_loam.gif   .
+ 请看win_loam.gif   <img width="280" height="158" alt="win_loam" src="https://github.com/user-attachments/assets/f45cd877-e06d-4ab9-9eca-8264a8ebc1de" />
+
