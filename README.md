@@ -15,3 +15,4 @@
 
 2.使用命令
 .\win_loam.exe `.\configs\win_loam.yaml `.\test_data
+![Uploading win_loam.gif…]()
