@@ -1,5 +1,5 @@
 # win_lidar_slam
-一个windows平台运行的a-loam的SLAM程序
+一个windows平台运行的a-loam的纯激光雷达SLAM程序
 ## 说明
 本项目用于离线运行录制的pcd数据，基于a-loam算法,代码请参考原仓库，仅做了windows平台移植。
 
