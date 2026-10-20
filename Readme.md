@@ -1,6 +1,7 @@
 #### win_lidar_slam
 
-一个windows平台运行的a-loam的纯激光雷达SLAM程序
+一个windows平台运行的a-loam的纯激光雷达SLAM程序.
+
 ![动图说明](win_slam.gif)
 
 本项目的建图模块引用oh-my-loam算法，封装了GUI用于windows电脑运行，第三方依赖库可点击云盘链接下载完整third_party，也可自行查看oh-my-loam的依赖清单下载。云盘链接提供已编译的一键运行版exe可供体验。
