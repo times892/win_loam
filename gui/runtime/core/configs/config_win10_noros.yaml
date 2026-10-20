@@ -1,0 +1,72 @@
+# global configs
+lidar: VLP16
+log_to_file: false
+log_path: ./logs
+profile_timing: true
+profile_match_detail: false
+profile_mapper_match_detail: false
+gui_log_frame_interval: 50
+vis: true
+save_map: true
+save_map_path: ./output/map.pcd
+save_trajectory: true
+
+extractor_config:
+  vis: false
+  verbose: false
+  min_point_num: 66
+  scan_seg_num: 12
+  sharp_corner_point_num: 2
+  corner_point_num: 20
+  flat_surf_point_num: 4
+  corner_point_curvature_th: 0.3
+  surf_point_curvature_th: 0.3
+  neighbor_point_dist_sq_th: 0.1
+  downsample_voxel_size: 0.5
+
+# configs for odometer
+odometer_config:
+  vis: false
+  verbose: false
+  nearby_scan_num: 1
+  min_correspondence_num: 10
+  icp_iter_num: 8
+  solve_iter_num: 8
+  solver_num_threads: 12
+  match_force_serial: true
+  match_use_dynamic_schedule: true
+  corn_match_dist_sq_th: 49.0
+  surf_match_dist_sq_th: 49.0
+  # ICP early stop parameters
+  icp_early_stop_enable: true
+  icp_min_iter_num: 3
+  icp_consecutive_stop_num: 2
+  icp_delta_trans_th: 0.005
+  icp_delta_rot_deg_th: 0.1
+
+# configs for mapper
+mapper_config:
+  vis: false
+  verbose: false
+  map_shape: [5, 21, 21]
+  map_step: 80
+  submap_shape: [1, 5, 5]
+  icp_iter_num: 4
+  solve_iter_num: 6
+  solver_num_threads: 2
+  match_force_serial: false
+  match_use_dynamic_schedule: true
+  match_num_threads: 5  # mapper match threads (default=solver_num_threads)，经过测试16线程电脑，6 线程最佳
+  min_correspondence_num: 10
+  nearest_neighbor_k: 5
+  neighbor_point_dist_sq_th: 1.0
+  min_line_fit_score: 2
+  min_plane_fit_score: 2
+  downsample_voxel_size: 0.3
+  # Mapper keyframe selection and background queue
+  keyframe_enable: true
+  keyframe_trans_th: 0.5
+  keyframe_rot_deg_th: 5.0
+  keyframe_max_frame_gap: 10
+  keyframe_queue_enable: true
+  keyframe_drain_on_finish: true
