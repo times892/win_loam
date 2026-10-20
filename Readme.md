@@ -21,6 +21,8 @@
 
 2.完成第一步后，编译win_Gui.sln,这个是GUI模块，用于可视化查看。
 
+3.如果只是想先体验，直接点击
+
 #### 视频效果
 
 运行效果，请查看此视频网站【windows版的离线SLAM程序】 https://www.bilibili.com/video/BV14RTh6HEgW/?share_source=copy_web&vd_source=7623de01a9adb609eb1dd0a0c8d48bf9
